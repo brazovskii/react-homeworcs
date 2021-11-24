@@ -35,10 +35,12 @@ const data2 = [
 ];
 
 //task 1
-const age = _.findIndex(data1, { age: 23 });
+const getAge = (obj, num) => _.findIndex(obj, { age: num });
+console.log(getAge(data1, 23));
 
 //task 2
-const mass = _.union(data1, data2);
+const mergeMass = (massOne, massTwo) => _.union(massOne, massTwo);
+console.log(mergeMass(data1, data2));
 
 //task 3
 const obj = {
@@ -47,12 +49,17 @@ const obj = {
   email: "leta.lee@qnekt.com",
 };
 
-const newObj = _.omit(obj, ["age"]);
+const newObj = (object, value) => _.omit(object, [value]);
+console.log(newObj(obj, "age"));
 
 //task 4
-const objNew = {};
-for (let key in obj) {
-  if (key !== "age") {
-    objNew[key] = obj[key];
+const getObj = (object, value) => {
+  const objNew = {};
+  for (let key in object) {
+    if (key !== value) {
+      objNew[key] = object[key];
+    }
   }
-}
+  return objNew;
+};
+console.log(getObj(obj, "age"));
