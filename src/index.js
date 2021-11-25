@@ -6,9 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Text text="GO" colors="red" size={60} line={false} />
-    <Text text="OG" colors="blue" size={40} line={false} />
-    <Text text="LE" colors="green" size={70} line={true} />
+    <Text text="GO" colors="red" size={60} underline={false} />
+    <Text text="OG" colors="blue" size={40} underline={false} />
+    <Text text="LE" colors="green" size={70} underline={true} />
   </React.StrictMode>,
   document.getElementById("root")
 );

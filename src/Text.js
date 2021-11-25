@@ -1,12 +1,12 @@
 import "./App.css";
 
-const Text = ({ text, colors, size, line }) => {
+const Text = ({ text, colors, size, underline }) => {
   return (
     <span
       style={{
         color: colors,
         fontSize: size,
-        textDecoration: line === true ? "underline" : false,
+        textDecoration: underline === true ? "underline" : false,
       }}
     >
       {text}
