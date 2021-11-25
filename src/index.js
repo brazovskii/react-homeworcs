@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Square from "./Sqare";
+import { Square, Text } from "./NewTag";
 import "./App.css";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
+    <Text text="GO" colors="red" size={60} underline={false} />
+    <Text text="OG" colors="blue" size={40} underline={false} />
+    <Text text="LE" colors="green" size={70} underline={true} />
     <Square label="Большой" cssClass="big" />
     <Square label="Средний" cssClass="medium" />
     <Square label="Маленький" cssClass="small" />
