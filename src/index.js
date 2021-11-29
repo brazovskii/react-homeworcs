@@ -9,7 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Text text="GO" colors="red" size={60} underline={false} />
     <Text text="OG" colors="blue" size={40} underline={false} />
-    <Text text="LE" colors="green" size={70} underline={true} />
+    <Text text="LE" colors="green" size={70} underline={false} />
     <Square label="Большой" cssClass="big" />
     <Square label="Средний" cssClass="medium" />
     <Square label="Маленький" cssClass="small" />

@@ -10,7 +10,7 @@ const Text = ({ text, colors, size, underline }) => {
       style={{
         color: colors,
         fontSize: size,
-        textDecoration: underline === true ? "underline" : false,
+        textDecoration: underline ? "underline" : "none",
       }}
     >
       {text}
