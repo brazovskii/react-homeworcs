@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import ButtonFC from "./components/Button";
+import ButtonIncrement from "./components/Increment";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ButtonFC />
+    <ButtonIncrement />
   </React.StrictMode>,
   document.getElementById("root")
 );
