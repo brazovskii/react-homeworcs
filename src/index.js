@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import ButtonIncrement from "./components/Increment";
+import Dropdown from "./components/Dropdown";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ButtonIncrement />
+    <Dropdown />
   </React.StrictMode>,
   document.getElementById("root")
 );

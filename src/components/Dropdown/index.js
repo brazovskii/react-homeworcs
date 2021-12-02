@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 
-const Loader = () => {
+const Dropdown = () => {
   const [visible, setVisible] = useState(false);
   let timerId = setTimeout(function tick() {
     setVisible(!visible);
@@ -15,4 +15,4 @@ const Loader = () => {
   );
 };
 
-export default Loader;
+export default Dropdown;
