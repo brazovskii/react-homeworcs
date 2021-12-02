@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import ButtonFC from "./components/Button";
+import UserList from "./UserList";
+import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ButtonFC />
+    <UserList />
   </React.StrictMode>,
   document.getElementById("root")
 );
