@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import UserList from "./UserList";
-import reportWebVitals from "./reportWebVitals";
+import ButtonIncrement from "./components/Increment";
 
 ReactDOM.render(
   <React.StrictMode>
-    <UserList />
+    <ButtonIncrement />
   </React.StrictMode>,
   document.getElementById("root")
 );

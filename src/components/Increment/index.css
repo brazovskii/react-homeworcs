@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+/* .button {
+  font-size: 4rem;
+} */
+
+.header__button {
+  font-size: 4rem;
+}
