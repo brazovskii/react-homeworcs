@@ -3,14 +3,20 @@ import "./index.css";
 
 const Dropdown = () => {
   const [visible, setVisible] = useState(false);
-  let timerId = setTimeout(function tick() {
-    setVisible(!visible);
-    timerId = setTimeout(tick); // (*)
-  }, 2000);
+
   return (
-    <div>
-      <button onClick={() => timerId}>Sy Hi</button>
-      {visible && <div className="loader"></div>}
+    <div className="header">
+      <button onClick={() => setVisible(!visible)}>
+        Ингредиенты {visible ? "🔽" : `🔼`}
+      </button>
+      {visible && (
+        <div>
+          <ul> Text какой-то Персик</ul>
+          <ul> Text какой-то Ананас</ul>
+          <ul> Text какой-то Укроп</ul>
+          <ul> Text какой-то Петрушка</ul>
+        </div>
+      )}
     </div>
   );
 };
