@@ -6,24 +6,22 @@ const SayHi = () => {
   const [greeting, setGreeting] = useState("");
   const sayHi = () => {
     setGreeting("Hello User");
-    setLoading();
+    setLoading(loading);
   };
 
   return (
     <div className="header">
       <button
         onClick={() => {
-          setTimeout(sayHi, 2000);
+          setTimeout(sayHi, 3000);
           setLoading(!loading);
         }}
       >
         Say Hi !
       </button>
-      {loading === true ? (
-        <div className="loader"></div>
-      ) : (
-        <span>{greeting}</span>
-      )}
+
+      {loading && <div className="loader"></div>}
+      {greeting && <span>{greeting}</span>}
     </div>
   );
 };
