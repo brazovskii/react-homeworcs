@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Dropdown from "./components/Dropdown";
+import Names from "./components/Names";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dropdown />
+    <Names />
   </React.StrictMode>,
   document.getElementById("root")
 );
