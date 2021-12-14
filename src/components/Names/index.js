@@ -5,10 +5,9 @@ import names from "./names.json";
 const Names = () => {
   const [people, setState] = useState(["Aleks", "Ann", "Leo"]);
 
+  const oneMoreName = names[Math.floor(Math.random() * names.length)];
   const onBtn = () => {
-    const oneMoreName = names[Math.floor(Math.random() * names.length)];
-    const newPeople = [...people, oneMoreName];
-    setState([people, oneMoreName]);
+    setState([...people, oneMoreName]);
   };
 
   return (
@@ -16,7 +15,7 @@ const Names = () => {
       {people.map((el, it) => {
         return (
           <div key={it}>
-            <h2>{el}</h2>
+            <div>{el}</div>
           </div>
         );
       })}
