@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Dropdown from "./components/Dropdown";
+import Timer from "./components/Timer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dropdown />
+    <Timer />
   </React.StrictMode>,
   document.getElementById("root")
 );

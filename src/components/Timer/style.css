@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__main {
+  height: 20rem;
+  width: 20rem;
+  position: relative;
+}
+
+.header__parag--right {
+  position: absolute;
+  font-size: 5rem;
+  left: 3rem;
+}
+
+.header__parag--left {
+  position: absolute;
+  font-size: 5rem;
+  right: 3rem;
+}
+
+.header__body {
+  display: flex;
+  top: 11rem;
+  left: 3.3rem;
+  position: absolute;
+}
+
+.header__button {
+  padding: 0.5rem;
+  border-radius: 3rem;
+  border: none;
+  background-color: white;
+  margin: 3px;
+}
+
+.header__span {
+  position: absolute;
+  font-size: 5rem;
+  left: 9.5rem;
+  top: 4.4rem;
+}
+
+.header__footer {
+  display: flex;
+  right: 2.7rem;
+  top: 11rem;
+  position: absolute;
+}
+
+.header__button:hover {
+  background-color: yellow;
+}
+
+.reset {
+  position: absolute;
+  top: 11rem;
+  left: 8.4rem;
+  border: solid 2px;
+  border-color: black;
+}
