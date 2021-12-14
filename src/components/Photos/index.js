@@ -8,7 +8,7 @@ const Photos = () => {
     getPhotos();
   }, []);
 
-  const getPhotos = async (num) => {
+  const getPhotos = async (num = 1) => {
     const response = await fetch(
       `https://jsonplaceholder.typicode.com/photos?_page=${num}&_limit=10`
     );
@@ -30,14 +30,13 @@ const Photos = () => {
       </div>
       <div className="footer">
         {arr.map((item) => {
-          const sum = item++;
           return (
             <button
               key={item}
               className="footer__button"
-              onClick={() => getPhotos(sum)}
+              onClick={() => getPhotos(item)}
             >
-              {sum}
+              {item}
             </button>
           );
         })}
