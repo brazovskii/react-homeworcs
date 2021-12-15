@@ -1,0 +1,27 @@
+.head {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main__body {
+  max-width: min-content;
+  margin: 1rem;
+}
+
+.footer {
+  position: absolute;
+  top: 50rem;
+}
+
+.footer__button {
+  margin: 1rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+}
