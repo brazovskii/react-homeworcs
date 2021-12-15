@@ -12,9 +12,9 @@ const Names = () => {
 
   return (
     <div>
-      {people.map((el, it) => {
+      {people.map((el) => {
         return (
-          <div key={it}>
+          <div key={el}>
             <div>{el}</div>
           </div>
         );
