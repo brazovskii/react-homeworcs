@@ -1,0 +1,11 @@
+.figure {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.figure__body {
+  width: 20rem;
+  height: 20rem;
+  background-color: red;
+}

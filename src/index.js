@@ -1,13 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Dropdown from "./components/Dropdown";
-import Post from "./components/Post";
-import Photos from "./components/Photos";
+import App from "./navigation";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Photos />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

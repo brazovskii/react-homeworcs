@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.header__main {
+}
+
+.header__footer {
+  margin-top: 4rem;
+}
+
+.button__top {
+  margin: 0 3rem 0 3rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: black;
+  padding: 1rem;
+}
+
+.button__bottom {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: black;
+  padding: 1rem;
+}
