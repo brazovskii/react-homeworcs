@@ -7,16 +7,13 @@ const Figure = () => {
   const params = useParams();
 
   return (
-    <div className="figure">
+    <div className="figure__head">
       <div
-        className="figure__body"
+        className={`figure__body figure${params.id}`}
         style={{
           backgroundColor: params.color,
-          borderRadius: params.id === "1" ? "0" : "10rem",
         }}
-      >
-        {console.log(params)}
-      </div>
+      ></div>
     </div>
   );
 };

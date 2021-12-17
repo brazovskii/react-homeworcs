@@ -14,10 +14,11 @@
 
 .button__top {
   margin: 0 3rem 0 3rem;
-  font-size: 2rem;
+  font-size: 3.5rem;
+  width: 5rem;
+  height: 5rem;
   margin-top: 2rem;
   color: black;
-  padding: 1rem;
 }
 
 .button__bottom {
@@ -25,4 +26,12 @@
   font-size: 2rem;
   color: black;
   padding: 1rem;
+}
+
+.figure1 {
+  border-radius: 0;
+}
+
+.figure2 {
+  border-radius: 10rem;
 }

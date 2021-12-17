@@ -1,4 +1,4 @@
-.figure {
+.figure__head {
   display: flex;
   justify-content: center;
   margin-top: 10rem;
@@ -8,4 +8,12 @@
   width: 20rem;
   height: 20rem;
   background-color: red;
+}
+
+.figure1 {
+  border-radius: 0;
+}
+
+.figure2 {
+  border-radius: 10rem;
 }

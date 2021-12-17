@@ -11,14 +11,14 @@ const Navbar = () => {
 
   const history = useHistory();
 
-  const handleClickId = (key) => {
-    setType(key);
-    history.push(`/figure/${key}/${color}`);
+  const handleClickId = (valueType) => {
+    setType(valueType);
+    history.push(`/figure/${valueType}/${color}`);
   };
 
-  const handleClickColor = (keys) => {
-    setColor(keys);
-    history.push(`/figure/${type}/${keys}`);
+  const handleClickColor = (valueColor) => {
+    setColor(valueColor);
+    history.push(`/figure/${type}/${valueColor}`);
   };
 
   return (
@@ -27,7 +27,7 @@ const Navbar = () => {
         {types.map((item) => {
           return (
             <button
-              className="button__top"
+              className={`button__top figure${item}`}
               key={item}
               onClick={() => handleClickId(item)}
             >
@@ -43,6 +43,7 @@ const Navbar = () => {
               className="button__bottom"
               key={item}
               onClick={() => handleClickColor(item)}
+              style={{ backgroundColor: item }}
             >
               {item}
             </button>

@@ -12,12 +12,10 @@ export default function App() {
         <Switch>
           <Route path="/">
             <Navbar />
-            <Route path="/figure/:id/:color" >
-              <Figure  />
+            <Route path="/figure/:id/:color">
+              <Figure />
             </Route>
           </Route>
-
-          <Route></Route>
         </Switch>
       </div>
     </Router>
